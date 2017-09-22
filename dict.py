@@ -51,3 +51,45 @@ info.clear()
 print(info) 
 
 
+#遍历  带索引
+chars = ['a','b','b','c']
+i = 0
+for ch in chars:
+	print('%d %s'%(i,ch))
+	i+=1
+
+for i,ch in enumerate(chars):
+	print i,ch
+
+#think reference
+a = 1
+b = a 
+print(b)
+print(id(b))
+print(id(a))
+a = 2 
+print(b)
+print(id(a))
+print(id(b))
+a,b = b,a  #交换两个变量
+print a,b
+
+a = [1,2]
+b = a 
+print(b)
+print(id(b))
+a.append(3)
+print(b)
+print(id(a))
+print(id(b))
+'''
+可变类型，值可以改变：
+
+列表 list
+字典 dict
+不可变类型，值不可以改变：
+
+数值类型 int, long, bool, float
+字符串 str
+元组 tuple
+'''
