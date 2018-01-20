@@ -2,28 +2,35 @@
 
 class CarStore(object):
     def order(self,carType):
-        if carType == '索纳塔':
+        if carType=='索纳塔':
             return Suonata()
         elif carType == '名图':
             return Mingtu()
-
+        elif carType == '途胜':
+            return Tucson()
 
 class Car(object):
     def move(self):
-        print("点火启动...")
+        print("车在跑...")
+
     def playMusic(self):
-        print("播放音乐...")
+        print("正在播放音乐")
+
     def stop(self):
-        print("刹车....")
+        print("刹车...")
 
 class Suonata(Car):
-    pass  #pass空操作
+    pass
 
 class Mingtu(Car):
     pass
 
+class Tucson(Car):
+    pass
+
+
 carStore = CarStore()
-car = carStore.order("索纳塔")
+car = carStore.order("途胜")
 car.move()
 car.playMusic()
 car.stop()
