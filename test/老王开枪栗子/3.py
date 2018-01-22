@@ -113,9 +113,18 @@ def main():
     print(enemy)
 
     #开枪
+    print("——————————————————开打——————————————————")
     laowang.launch(enemy)
-    print(laowang)
     print(enemy)
+    print(laowang)
+    laowang.launch(enemy)
+    print(enemy)
+    print(laowang)
+    laowang.launch(enemy)
+    print(enemy)
+    print(laowang)
+    
+   
 
 
 if __name__ == '__main__':
