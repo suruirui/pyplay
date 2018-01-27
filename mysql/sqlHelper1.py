@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 
-#插入数据  
+#python3版本使用pymysql库操作数据库
+#插入数据
 import pymysql
 
 #创建连接
